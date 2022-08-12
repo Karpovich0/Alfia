@@ -1,0 +1,70 @@
+
+.main{
+    padding: 0 20px;    
+    min-height: 100vh;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 1px 2px 4px #b2a98f;
+
+}
+
+.section{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.3;
+    color: #000;
+    //animation
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+    &--active{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    &--one{
+        height: 100vh;        
+    }
+    &--last{
+        height: 80vh;
+    }
+    &--large{
+        height: 120vh;
+    }
+    &__content{
+       width: 100%;
+       max-width: 1200px;
+       text-align: center;
+    }
+    &--song{
+        flex-direction: column;
+    }
+    span{
+        text-decoration: underline;
+    }
+    &__pusha{
+        color: rgb(87, 12, 12);
+    }
+    &__alfia{
+        color: rgb(39, 36, 94);
+    }
+    &__audio-wrapper{
+        display: block;
+        margin-top: 30px;
+    }   
+    @media(max-width:1200px){
+        font-size: 80px;
+    }
+    @media(max-width:1000px){
+        font-size: 65px;
+    }
+    @media(max-width:768px){
+        font-size: 45px;
+    }   
+}
